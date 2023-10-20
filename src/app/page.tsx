@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { UserButton } from '@clerk/nextjs'
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
               Get Started
             </button>
           </Link>
+
+          <UserButton afterSignOutUrl="/" />
         </div>
       </div>
     </main>
